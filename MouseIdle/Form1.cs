@@ -102,13 +102,13 @@ namespace MouseIdle
             switch (comboBox1.SelectedText)
             {
                 case "Bottom Right":
-                    pt = new Point(Screen.PrimaryScreen.Bounds.Width - 10, Screen.PrimaryScreen.Bounds.Height - 10);
+                    pt = new Point(Screen.PrimaryScreen.Bounds.Width - 1, Screen.PrimaryScreen.Bounds.Height - 1);
                     break;
                 case "Bottom Left":
-                    pt = new Point(10, Screen.PrimaryScreen.Bounds.Height - 10);
+                    pt = new Point(0, Screen.PrimaryScreen.Bounds.Height - 1);
                     break;
                 case "Top Right":
-                    pt = new Point(Screen.PrimaryScreen.Bounds.Width - 10, 10);
+                    pt = new Point(Screen.PrimaryScreen.Bounds.Width - 1, 0);
                     break;
                 default:
                     pt = new Point(0, 0);

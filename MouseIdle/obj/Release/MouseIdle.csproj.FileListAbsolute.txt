@@ -7,3 +7,4 @@ C:\Users\qojmo2\Google Drive\DEV\VisualStudio\MouseIdle\MouseIdle\obj\Release\Mo
 C:\Users\qojmo2\Google Drive\DEV\VisualStudio\MouseIdle\MouseIdle\obj\Release\MouseIdle.csproj.GenerateResource.Cache
 C:\Users\qojmo2\Google Drive\DEV\VisualStudio\MouseIdle\MouseIdle\obj\Release\MouseIdle.exe
 C:\Users\qojmo2\Google Drive\DEV\VisualStudio\MouseIdle\MouseIdle\obj\Release\MouseIdle.pdb
+C:\Users\qojmo2\Google Drive\DEV\VisualStudio\MouseIdle\MouseIdle\obj\Release\MouseIdle.csprojResolveAssemblyReference.cache

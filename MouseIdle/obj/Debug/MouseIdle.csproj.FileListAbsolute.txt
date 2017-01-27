@@ -1,0 +1,10 @@
+C:\Users\qojmo2\Google Drive\DEV\VisualStudio\MouseIdle\MouseIdle\bin\Debug\MouseIdle.exe.config
+C:\Users\qojmo2\Google Drive\DEV\VisualStudio\MouseIdle\MouseIdle\bin\Debug\MouseIdle.exe
+C:\Users\qojmo2\Google Drive\DEV\VisualStudio\MouseIdle\MouseIdle\bin\Debug\MouseIdle.pdb
+C:\Users\qojmo2\Google Drive\DEV\VisualStudio\MouseIdle\MouseIdle\obj\Debug\MouseIdle.csprojResolveAssemblyReference.cache
+C:\Users\qojmo2\Google Drive\DEV\VisualStudio\MouseIdle\MouseIdle\obj\Debug\MouseIdle.Form1.resources
+C:\Users\qojmo2\Google Drive\DEV\VisualStudio\MouseIdle\MouseIdle\obj\Debug\MouseIdle.Properties.Resources.resources
+C:\Users\qojmo2\Google Drive\DEV\VisualStudio\MouseIdle\MouseIdle\obj\Debug\MouseIdle.csproj.GenerateResource.Cache
+C:\Users\qojmo2\Google Drive\DEV\VisualStudio\MouseIdle\MouseIdle\obj\Debug\MouseIdle.exe
+C:\Users\qojmo2\Google Drive\DEV\VisualStudio\MouseIdle\MouseIdle\obj\Debug\MouseIdle.pdb
+C:\Users\qojmo2\Google Drive\DEV\VisualStudio\MouseIdle\MouseIdle\obj\Debug\MouseIdle.AboutBox1.resources

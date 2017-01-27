@@ -26,6 +26,7 @@ namespace MouseIdle
         public Form1()
         {
             InitializeComponent();
+            this.Text = Application.ProductName;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -122,7 +123,8 @@ namespace MouseIdle
         {
 
             //lastMovement = DateTime.Now.AddDays(-1);
-            this.Text = Application.ProductName;
+            
+            notifyIcon1.Text = Application.ProductName;
             labelStatus.Text = "";
             lastMovement = DateTime.Now;
             pos_last = Cursor.Position;
@@ -282,5 +284,43 @@ namespace MouseIdle
             SaveRegistrySettings();
         }
 
+        private void Form1_Shown(object sender, EventArgs e)
+        {
+            this.Hide();
+            this.Opacity = 100;
+        }
+
+        private void Form1_Move(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Minimized)
+            {
+                notifyIcon1.ShowBalloonTip(600, Application.ProductName, Application.ProductName + " running.", ToolTipIcon.Info);
+                this.Hide();
+            }
+            else
+            {
+                this.Show();
+            }
+        }
+
+
+        private void notifyIcon1_BalloonTipClicked(object sender, EventArgs e)
+        {
+            ShowMe();
+        }
+
+        private void notifyIcon1_DoubleClick(object sender, EventArgs e)
+        {
+            ShowMe();
+        }
+
+        private void ShowMe()
+        {
+            this.Show();
+            if (this.WindowState == FormWindowState.Minimized)
+            {
+                this.WindowState = FormWindowState.Normal;
+            }
+        }
     }
 }

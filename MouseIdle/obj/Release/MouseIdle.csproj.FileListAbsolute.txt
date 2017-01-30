@@ -8,3 +8,13 @@ C:\Users\qojmo2\Google Drive\DEV\VisualStudio\MouseIdle\MouseIdle\obj\Release\Mo
 C:\Users\qojmo2\Google Drive\DEV\VisualStudio\MouseIdle\MouseIdle\obj\Release\MouseIdle.exe
 C:\Users\qojmo2\Google Drive\DEV\VisualStudio\MouseIdle\MouseIdle\obj\Release\MouseIdle.pdb
 C:\Users\qojmo2\Google Drive\DEV\VisualStudio\MouseIdle\MouseIdle\obj\Release\MouseIdle.csprojResolveAssemblyReference.cache
+C:\Users\Joe\Google Drive\DEV\VisualStudio\MouseIdle\MouseIdle\bin\Release\MouseIdle.exe.config
+C:\Users\Joe\Google Drive\DEV\VisualStudio\MouseIdle\MouseIdle\obj\Release\MouseIdle.exe
+C:\Users\Joe\Google Drive\DEV\VisualStudio\MouseIdle\MouseIdle\obj\Release\MouseIdle.pdb
+C:\Users\Joe\Google Drive\DEV\VisualStudio\MouseIdle\MouseIdle\bin\Release\MouseIdle.exe
+C:\Users\Joe\Google Drive\DEV\VisualStudio\MouseIdle\MouseIdle\bin\Release\MouseIdle.pdb
+C:\Users\Joe\Google Drive\DEV\VisualStudio\MouseIdle\MouseIdle\obj\Release\MouseIdle.csprojResolveAssemblyReference.cache
+C:\Users\Joe\Google Drive\DEV\VisualStudio\MouseIdle\MouseIdle\obj\Release\MouseIdle.AboutBox1.resources
+C:\Users\Joe\Google Drive\DEV\VisualStudio\MouseIdle\MouseIdle\obj\Release\MouseIdle.Form1.resources
+C:\Users\Joe\Google Drive\DEV\VisualStudio\MouseIdle\MouseIdle\obj\Release\MouseIdle.Properties.Resources.resources
+C:\Users\Joe\Google Drive\DEV\VisualStudio\MouseIdle\MouseIdle\obj\Release\MouseIdle.csproj.GenerateResource.Cache

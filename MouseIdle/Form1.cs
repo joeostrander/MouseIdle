@@ -46,7 +46,7 @@ namespace MouseIdle
             if (pos_current != pos_last)
             {
                 labelStatus.Text = "Moved!  "+pos_last.ToString()+"<>"+pos_current.ToString();
-                Console.WriteLine("Moved!  " + pos_last.ToString() + "<>" + pos_current.ToString());
+                //Console.WriteLine("Moved!  " + pos_last.ToString() + "<>" + pos_current.ToString());
                 if (boolHidden)
                 {
                     //move back
@@ -99,8 +99,7 @@ namespace MouseIdle
         private Point getHiddenPoint()
         {
             Point pt;
-            Console.WriteLine(comboBox1.SelectedText);
-            switch (comboBox1.SelectedText)
+            switch (comboBox1.Text)
             {
                 case "Bottom Right":
                     pt = new Point(Screen.PrimaryScreen.Bounds.Width - 1, Screen.PrimaryScreen.Bounds.Height - 1);

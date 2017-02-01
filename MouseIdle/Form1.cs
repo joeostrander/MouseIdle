@@ -27,7 +27,7 @@ namespace MouseIdle
         static bool boolMouseDownLeft = false;
         static bool boolMouseDownRight = false;
         static bool boolMouseWheelMove = false;
-        static uint Delta;
+        static int Delta;
         static int cornerIndex = 0;
         
 
@@ -74,7 +74,7 @@ namespace MouseIdle
 
 
         [DllImport("user32.dll")]
-        static extern void mouse_event(uint dwFlags, uint dx, uint dy, uint dwData, UIntPtr dwExtraInfo);
+        static extern void mouse_event(uint dwFlags, uint dx, uint dy, int dwData, UIntPtr dwExtraInfo);
 
 
         [DllImport("user32.dll")]
@@ -134,7 +134,11 @@ namespace MouseIdle
                 boolHidden = false;
                 pos_last = pos_original;
                 lastMovement = DateTime.Now;
-                if (boolMouseDownLeft)
+                if (boolMouseWheelMove) {
+                    boolMouseWheelMove = false;
+                    WheelMove();
+                }
+                else if (boolMouseDownLeft)
                 {
                     boolMouseDownLeft = false;
                     LeftDown();
@@ -143,11 +147,6 @@ namespace MouseIdle
                 {
                     boolMouseDownRight = false;
                     RightDown();
-                }
-                else if (boolMouseWheelMove)
-                {
-                    boolMouseWheelMove = false;
-                    WheelMove();
                 }
                 return;
             }
@@ -205,6 +204,7 @@ namespace MouseIdle
 
         private void WheelMove()
         {
+            Console.WriteLine("Wheel move {0}", Delta);
             mouse_event(MOUSEEVENTF_WHEEL, 0, 0, Delta, UIntPtr.Zero);
         }
 
@@ -487,7 +487,7 @@ namespace MouseIdle
                     String msg = "";
                     if (wParam == WM_MOUSEWHEEL)
                     {
-                        Delta = (uint)(lParam.MouseData >> 16);
+                        Delta = (int)(lParam.MouseData >> 16);
                         boolMouseWheelMove = true;
                         if (Delta > 0)
                         {

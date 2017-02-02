@@ -167,6 +167,9 @@ namespace MouseIdle
             {
                 if (!boolHidden)
                 {
+                    //if the workstation locked... it'll read 0,0 location
+                    if (Cursor.Position.X == 0 && Cursor.Position.Y == 0)
+                        return;
                     labelStatus.Text = "Idle.";
                     boolHidden = true;
                     pos_hidden = getHiddenPoint();
@@ -483,7 +486,7 @@ namespace MouseIdle
             {
                 if (wParam != WM_MOUSEMOVE)
                 {
-                    Console.WriteLine(wParam.ToString("X"));
+                    //Console.WriteLine(wParam.ToString("X"));
                     String msg = "";
                     if (wParam == WM_MOUSEWHEEL)
                     {

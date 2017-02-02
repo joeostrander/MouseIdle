@@ -218,7 +218,7 @@ namespace MouseIdle
             Point pos_current = Cursor.Position;
             if (pos_current == pos_hidden)
             {
-                Console.WriteLine("SKIP!");
+                Console.WriteLine("SKIP MOUSEMOVE! {0}", pos_current.ToString());
                 return;
             }
                 
@@ -486,20 +486,24 @@ namespace MouseIdle
             {
                 if (wParam != WM_MOUSEMOVE)
                 {
-                    //Console.WriteLine(wParam.ToString("X"));
+                    //Console.WriteLine("WPARAM:  {0}",wParam.ToString("X"));
                     String msg = "";
                     if (wParam == WM_MOUSEWHEEL)
                     {
                         Delta = (int)(lParam.MouseData >> 16);
-                        boolMouseWheelMove = true;
-                        if (Delta > 0)
+                        if (lParam.Location == pos_hidden)
                         {
-                            msg = "Scroll up";
+                            boolMouseWheelMove = true;
+                            if (Delta > 0)
+                            {
+                                msg = "Scroll up";
+                            }
+                            else if (Delta < 0)
+                            {
+                                msg = "Scroll down";
+                            }
                         }
-                        else if (Delta < 0)
-                        {
-                            msg = "Scroll down";
-                        }
+                        
                     }
                     else if (wParam == WM_LBUTTONUP)
                     {
@@ -516,12 +520,14 @@ namespace MouseIdle
                     else if (wParam == WM_LBUTTONDOWN)
                     {
                         msg = "Left button down";
-                        boolMouseDownLeft = true;
+                        if (lParam.Location == pos_hidden)
+                            boolMouseDownLeft = true;
                     }
                     else if (wParam == WM_RBUTTONDOWN)
                     {
                         msg = "Right button down";
-                        boolMouseDownRight = true;
+                        if (lParam.Location == pos_hidden)
+                            boolMouseDownRight = true;
                     }
                     else if (wParam == WM_MBUTTONDOWN)
                     {

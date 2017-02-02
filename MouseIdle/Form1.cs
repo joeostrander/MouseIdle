@@ -552,7 +552,8 @@ namespace MouseIdle
             else
             {
                 Console.WriteLine("SKIPPING");
-                return -1;
+                //not sure... maybe this should return -1
+                return 1;
             }
 
 
